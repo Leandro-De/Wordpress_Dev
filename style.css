@@ -10,3 +10,15 @@
     Tags: Gym, gimnasio, flexbox, css grid, mobile first
     Text Domain: gymfitness
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Staatliches&display=swap');
+
+:root{
+    /**Fuentes**/
+    --fuente-principal: 'Raleway', sans-serif;
+    --fuente-headings: 'Staatliches', cursive;
+}
+
+body{
+    font-family: var(--fuente-principal);
+}
