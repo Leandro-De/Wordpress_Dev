@@ -85,6 +85,10 @@ img{
     margin: 0 auto;
 }
 
+.contenido-centrado{
+    width: min(95%, 80rem);
+}
+
 /** Utilidades**/
 .text-center{
     text-align: center;
@@ -176,3 +180,4 @@ img{
         transform: scaleX(1);
     }
 }
+

@@ -1,8 +1,11 @@
 <?php
+    /*
+    * Template Name: Contenido Centrado (No Sidebars)
+    */
     get_header();
 ?>
 
-<main class="container seccion">
+<main class="container seccion contenido-centrado">
         <?php
         // El loop permite navegar a traves de las paginas consultadon la BD.
             while(have_posts()): the_post(); 
