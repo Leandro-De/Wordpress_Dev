@@ -89,10 +89,10 @@ img{
 .text-center{
     text-align: center;
 }
-.texto-primario{
+.text-primary{
     color: var(--primario);
 }
-.texto-blanco{
+.text-blanco{
     color: var(--blanco);
 }
 .seccion{
