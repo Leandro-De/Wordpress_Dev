@@ -1,5 +1,8 @@
 <?php
 
+// includes
+require get_template_directory().'/includes/widgets.php';
+
 function gympage_setup(){
     // imagenes destacadas
     add_theme_support('post-thumbnails');
