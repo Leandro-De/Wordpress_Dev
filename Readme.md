@@ -11,3 +11,6 @@ En la carpeta de plugin crear un archivo tipo "name_post_types.php"
     
 [Código del plugin](https://gist.github.com/Leandro-De/5194aa77c68b03c3a784bfc5de3bd008)
 
+## Parte 3 Crea la API para crear widgets
+
+Utilizando la API de WP para crear, editar y pintar Widgets a gusto.
