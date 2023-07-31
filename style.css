@@ -271,3 +271,18 @@ hr{
 .card .contenido p{
     color: var(--blanco);
 }
+
+/** Sidebar**/
+@media (min-width:728px){
+    .con-sidebar{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.informacion-clase{
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+}

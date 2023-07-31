@@ -25,8 +25,7 @@
                         <div class="contenido">
                             <a href="<?php the_permalink(); ?>">
                                 <h3><?php the_title(); ?></h3>
-                            </a>
-
+                            </a> 
                             <?php 
                                 $hora_inicio = get_field('hora_inicio');
                                 $hora_fin = get_field('hora_fin');
