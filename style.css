@@ -242,6 +242,28 @@ hr{
     cursor: pointer;
 }
 
+/**CATEGORIAS DE CARDS**/
+.post-categories{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.post-categories li{
+    background-color: var(--primario);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.post-categories a{
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
 .card:hover img{
     transform: scale(1.1);
 
@@ -268,8 +290,18 @@ hr{
     margin: 0;
 }
 
-.card .contenido p{
+.card .contenido p,
+.card .contenido .meta a{
     color: var(--blanco);
+}
+
+.card .meta{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card .meta span{
+    color: var(--primario);
 }
 
 /** Sidebar**/
@@ -330,10 +362,6 @@ hr{
     }
 }
 
-.galeria-imagenes li {
-
-}
-
 .galeria-imagenes li:nth-child(4){
     grid-row: 2 / 4;
     grid-column: 2 / 3;
@@ -362,4 +390,21 @@ hr{
 .galeria-imagenes img {
     height: 300px;
     object-fit: cover;
+}
+
+/**informacion meta**/
+.meta-info{
+    background-color: var(--gris-claro);
+    padding: 2rem;
+}
+
+.meta-info p,
+.meta-info a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.meta-info span{
+    color: var(--primario);
 }
