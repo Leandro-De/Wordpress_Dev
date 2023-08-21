@@ -112,6 +112,8 @@ body.home .header{
     padding-top: 2rem;
     height: auto;
     min-height: 70rem;
+    background-size: cover;
+    background-position: center center;
 }
 
 .tagline{
@@ -541,5 +543,23 @@ body.home .header{
 
     .area:hover p{
         opacity: 1;
+    }
+}
+
+.menuh:hover{
+    cursor: pointer;
+}
+
+.menup{
+    opacity: 0;
+    max-height: 0;
+}
+
+@media (min-width: 768px){
+    .menuh:hover{
+        display: none;
+    }
+    .menup{
+        all: unset;
     }
 }
