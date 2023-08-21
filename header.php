@@ -10,7 +10,9 @@
         <div class="container barra-navegacion">
             <div class="logo">
                 <!--funcion que llama a las imagenes de forma dinamica-->
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logotipo">
+                <a href="<?php echo site_url('/') ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logotipo">
+                </a>
             </div>
             <!-- Crear menu dinamico -->
             <?php 
