@@ -108,6 +108,32 @@ hr{
 }
 
 /** Header **/
+body.home .header{
+    padding-top: 2rem;
+    height: auto;
+    min-height: 70rem;
+}
+
+.tagline{
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+.tagline p{
+    font-size: 2rem;
+}
+
+@media (min-width: 768px){
+    body.home .header{
+        height: 100vh;
+        max-height: 90rem;
+    }   
+
+    .tagline{
+        margin-top: 15rem;
+    }
+}
+
 .header{
     background-color: var(--gris-oscuro);
     padding: 2rem 0;

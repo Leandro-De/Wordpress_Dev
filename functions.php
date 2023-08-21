@@ -45,3 +45,27 @@ function gympage_widgets(){
     ));
 }
 add_action('widgets_init', 'gympage_widgets');
+
+
+/** Imagenes dinamicas como BG */
+function gympage_hero_imagen(){
+    // Obtener el id de la pagina principal
+    $front_id = get_option('page_on_front');
+    // Obtener la img
+    $id_imagen = get_field('hero_imagen', $front_id);
+    // Obtener ruta img
+    $imagen = wp_get_attachment_image_src($id_imagen, 'full')[0];
+    // Crear CSS
+    wp_register_style('custom', false);
+    wp_enqueue_style('custom');
+
+    $imagen_destacada_css = "
+        body.home .header{
+            background-image: linear-gradient(rgb(0 0 0 /.75), rgb(0 0 0 / .75)), url($imagen);
+        }
+    ";
+    // Inyectar CSS
+    wp_add_inline_style('custom', $imagen_destacada_css);
+}
+
+add_action('init', 'gympage_hero_imagen');
